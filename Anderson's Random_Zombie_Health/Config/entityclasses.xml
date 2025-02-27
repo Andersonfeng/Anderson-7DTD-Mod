@@ -1,0 +1,4 @@
+<configs>
+<!-- increase 10% every 7 days , example 119 day = 17th BM , increase 170% +/-30% -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group/passive_effect[@name='HealthMax' and(@operation='perc_add')]/@value">1,1.7</set>
+</configs>

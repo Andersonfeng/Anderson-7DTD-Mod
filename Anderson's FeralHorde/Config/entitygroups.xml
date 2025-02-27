@@ -1,0 +1,68 @@
+<custom_entitygroups>
+    <append xpath="/entitygroups">
+        <entitygroup name="feralHordeStageGS_custom">
+            zombieDemolition
+            animalZombieBear
+            animalZombieVultureRadiated
+            zombieScreamerRadiated
+            zombieLumberjackRadiated
+            zombieFatCopRadiated
+            zombieBurntRadiated
+            zombieArleneRadiated
+            zombieBoeRadiated
+            zombieDarleneRadiated
+            zombieJanitorRadiated
+            zombieJoeRadiated
+            zombieMarleneRadiated
+            zombieMoeRadiated
+            zombieNurseRadiated
+            zombieSteveRadiated
+            zombieTomClarkRadiated
+            zombieYoRadiated
+            zombieSpiderRadiated
+            zombieSkateboarderRadiated
+            zombieBikerRadiated
+            zombieFatHawaiianRadiated
+            zombieBowlerRadiated
+            zombieFemaleFatRadiated
+            zombieSoldierRadiated
+            zombieWightRadiated
+            zombieMaleHazmatRadiated
+            zombieUtilityWorkerRadiated
+            zombieLabRadiated
+            zombieInmateRadiated
+            zombieBusinessManRadiated
+            zombieMutatedRadiated
+            animalZombieVulture, .2
+            zombieScreamer, .2
+            zombieLumberjack, .2
+            zombieFatCop, .2
+            zombieBurnt, .2
+            zombieArlene, .2
+            zombieBoe, .2
+            zombieDarlene, .2
+            zombieJanitor, .2
+            zombieJoe, .2
+            zombieMarlene, .2
+            zombieMoe, .2
+            zombieNurse, .2
+            zombieSteve, .2
+            zombieTomClark, .2
+            zombieYo, .2
+            zombieSpider, .2
+            zombieSkateboarder, .2
+            zombieBiker, .2
+            zombieFatHawaiian, .2
+            zombieBowler, .2
+            zombieFemaleFat, .2
+            zombieSoldier, .2
+            zombieWightFeral, .2
+            zombieMaleHazmat, .2
+            zombieUtilityWorker, .2
+            zombieLab, .2
+            zombieInmate, .2
+            zombieBusinessMan, .2
+            zombieMutated, .2            
+        </entitygroup>
+    </append>
+</custom_entitygroups>

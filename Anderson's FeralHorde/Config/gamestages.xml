@@ -1,0 +1,6 @@
+<AndersonGamestages>
+
+	<!-- feralHordeStagexxx -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[*]/spawn/@group">feralHordeStageGS_custom</set>
+
+</AndersonGamestages>

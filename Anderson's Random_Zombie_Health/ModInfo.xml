@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Anderson_Random_Zombie_Health_Bonus"/>
+	<DisplayName value="Anderson's Random_Zombie_Health_Bonus"/>
+	<Description value="Gives all zombies a randomized extra amount of health"/>
+	<Author value="Anderson"/>
+	<Version value="1.7.1"/>
+	<Website value=""/>	
+</xml>
