@@ -1,0 +1,7 @@
+<item_mods>
+
+	<set xpath="//effect_group[@name='new Fire Proc']/requirement[@name='RandomRoll']/@value">
+		90
+	</set>
+
+</item_mods>

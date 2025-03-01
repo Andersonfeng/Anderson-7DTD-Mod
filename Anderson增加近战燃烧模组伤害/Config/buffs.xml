@@ -1,0 +1,5 @@
+<configs>
+
+<set xpath="/buffs/buff[@name='buffBurningElement']/effect_group/passive_effect[@name='HealthChangeOT' and@operation='base_subtract' and@value='1.5']/@value">15</set>
+
+</configs>

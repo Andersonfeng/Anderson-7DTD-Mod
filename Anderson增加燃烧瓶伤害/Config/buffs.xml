@@ -1,0 +1,6 @@
+<mudong>
+	
+	<!-- <set xpath="/buffs/buff[@name='buffBurningMolotov']/effect_group/passive_effect[@name='HealthChangeOT']/@value">20,50,70,100</set> -->
+	<set xpath="/buffs/buff[@name='buffBurningMolotov']/effect_group/passive_effect[@name='HealthChangeOT']/@value">15,54,76,84</set>
+	
+</mudong>
