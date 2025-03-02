@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="AndersonIncreaseEntityLootContainerStayTime" />
+  <DisplayName value="AndersonIncreaseEntityLootContainerStayTime" />
+  <Version value="1.0" />
+  <Description value="Anderson Increase EntityLootContainerStayTime from 1200 to 12000" />
+  <Author value="Anderson" />
+</xml>
