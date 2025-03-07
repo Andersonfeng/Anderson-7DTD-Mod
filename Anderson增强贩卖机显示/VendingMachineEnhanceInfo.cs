@@ -22,6 +22,7 @@ namespace VendingMachineEnhanceInfo
     public class XUiC_TraderWindowPatch
     {
         public static string nextAutoBuy_date;
+        public static string autoBuyThreshold;
 
         [HarmonyPostfix]
         [HarmonyPatch(typeof(XUiC_TraderWindow), nameof(XUiC_TraderWindow.GetBindingValue))]
@@ -31,20 +32,27 @@ namespace VendingMachineEnhanceInfo
             ref bool __result,
             XUiC_QuestTrackerWindow __instance)
         {
-            if (!(bindingName == "RentedVendorNextUpdate"))
-                return true;
-            if (!string.IsNullOrEmpty(nextAutoBuy_date))
-            {
-                // Log.Out("VendingMachineEnhanceInfo: XUiC_TraderWindowPatch found nextAutoBuy_date:" + nextAutoBuy_date);
-                value = nextAutoBuy_date;
-            }
-            else
-            {
-                // Log.Out("VendingMachineEnhanceInfo: XUiC_TraderWindowPatch not found date:" + nextAutoBuy_date);
-            }
-
             __result = true;
-            return false;
+            switch (bindingName)
+            {
+                case "RentedVendorNextUpdate":
+                    if (!string.IsNullOrEmpty(nextAutoBuy_date))
+                    {
+                        value = nextAutoBuy_date;
+                    }
+
+                    return false;
+                case "NextBuyChance":
+                    if (!string.IsNullOrEmpty(autoBuyThreshold))
+                    {
+                        value = autoBuyThreshold;
+                    }
+
+                    return false;
+
+                default:
+                    return true;
+            }
         }
     }
 
@@ -64,6 +72,9 @@ namespace VendingMachineEnhanceInfo
             var nextAutoBuy_date = GameUtils.WorldTimeToString(___nextAutoBuy);
             // Log.Out("VendingMachineEnhanceInfo: TileEntityVendingMachinePatch nextAutoBuy_date:"+nextAutoBuy_date);
             XUiC_TraderWindowPatch.nextAutoBuy_date = nextAutoBuy_date;
+            XUiC_TraderWindowPatch.autoBuyThreshold = ___autoBuyThreshold.ToString();
+            Log.Out("VendingMachineEnhanceInfo: TileEntityVendingMachinePatch ___autoBuyThreshold:"+___autoBuyThreshold);
+            Log.Out("VendingMachineEnhanceInfo: TileEntityVendingMachinePatch autoBuyThreshold:"+XUiC_TraderWindowPatch.autoBuyThreshold);
             return true;
         }
     }
