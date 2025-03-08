@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <xml>
-    <append xpath="/windows/window[@name='windowTrader']/panel[@name='content']/rect[@name='categorySelector']">
-        <label pos="540,-2" depth="2" name="nextUpdateLabel" width="100" height="20" text="Next Update" font_size="32" justify="center" visible="{isowner}" />
-        <label pos="540,-22" depth="2" name="nextUpdateValue" width="100" height="20" text="{RentedVendorNextUpdate}" font_size="32" justify="center" visible="{isowner}" />
+    <append xpath="/windows/window[@name='windowTrader']/panel[@name='content']/rect[@name='categorySelector']">        
+        <label pos="440,-2" depth="2" name="RentedVendorNextUpdateText" width="100" height="20" text_key="RentedVendorNextUpdateText" font_size="32" justify="center" visible="{isowner}" />
+        <label pos="540,-2" depth="2" name="RentedVendorNextUpdate" width="100" height="20" text="{RentedVendorNextUpdate}" font_size="32" justify="center" visible="{isowner}" />
+        <label pos="440,-22" depth="2" name="NextBuyChanceText" width="100" height="20" text_key="NextBuyChanceText" font_size="32" justify="center" visible="{isowner}" />
+        <label pos="540,-22" depth="2" name="NextBuyChance" width="100" height="20" text="{NextBuyChance}" font_size="32" justify="center" visible="{isowner}" />
     </append>
 </xml>
